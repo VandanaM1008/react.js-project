@@ -1,10 +1,7 @@
 .overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(44, 51, 73, 0.17);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,43 +9,41 @@
 }
 
 .modal {
-  background: white;
-  border-radius: 8px;
-  width: 90%;
-  max-width: 500px;
-  max-height: 90vh;
+  background: #fff;
+  border-radius: 12px;
+  min-width: 290px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 0 36px rgba(40,51,72,.13);
   overflow-y: auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  border-bottom: 1px solid #e0e0e0;
+  padding: 20px 20px 8px 20px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .header h2 {
+  font-size: 1.35rem;
+  color: #252b38;
   margin: 0;
-  font-size: 1.5rem;
-  color: #333;
 }
 
 .closeBtn {
   background: none;
   border: none;
-  font-size: 2rem;
+  font-size: 1.7rem;
   cursor: pointer;
-  color: #666;
+  color: #b9bac4;
+  padding: 0 8px;
   line-height: 1;
-  padding: 0;
-  width: 30px;
-  height: 30px;
 }
 
 .closeBtn:hover {
-  color: #333;
+  color: #4754da;
 }
 
 .content {
