@@ -1,70 +1,74 @@
 .app {
   min-height: 100vh;
-  background-color: #f5f5f5;
-  padding: 20px;
+  background-color: #f7f8fa;
+  padding: 32px 16px;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 12px rgba(40, 51, 72, 0.09);
+  padding: 36px 28px 28px 28px;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
-  flex-wrap: wrap;
-  gap: 16px;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  gap: 24px;
 }
 
 .header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #262c36;
   margin: 0;
-  color: #333;
-  font-size: 2rem;
 }
 
 .btn-add {
-  padding: 12px 24px;
-  background-color: #4caf50;
-  color: white;
+  padding: 10px 24px;
+  background: #4754da;
+  color: #fff;
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
+  border-radius: 6px;
+  font-size: 1rem;
   font-weight: 500;
-  transition: background-color 0.2s;
+  box-shadow: 0 2px 6px rgba(71, 84, 218, 0.08);
+  cursor: pointer;
+  transition: background 0.2s;
 }
 
 .btn-add:hover {
-  background-color: #45a049;
+  background: #3d48bb;
 }
 
 .loading,
 .error {
   text-align: center;
-  padding: 40px;
-  font-size: 18px;
-}
-
-.loading {
-  color: #666;
+  font-size: 1.15rem;
+  color: #454c5a;
+  padding: 48px 0 13px 0;
 }
 
 .error {
-  color: #dc3545;
+  color: #d02525;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+  .container {
+    padding: 18px 6px 12px 6px;
+  }
   .header {
     flex-direction: column;
     align-items: flex-start;
+    gap: 12px;
   }
-
   .header h1 {
     font-size: 1.5rem;
   }
-
   .btn-add {
     width: 100%;
   }
